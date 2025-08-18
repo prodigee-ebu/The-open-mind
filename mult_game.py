@@ -1,6 +1,6 @@
 from random import randint
 
-print('Welcome to Jazz multiplication challenge')
+print('Welcome to the prodigee multiplication challenge')
 name=input('Enter your name: ')
 ques=int(input(f'Hi {name}, How many questions should I ask you: '))
 print('1. Easy')
@@ -59,6 +59,7 @@ elif (ques//2)<right<ques:
 else:
     print(f'Congratulations {name}, you did excellently well!!!')
     print(f'You got all answers correctly => Percent: 100')
+
 
 
 
