@@ -1,0 +1,52 @@
+body{
+    background-color:antiquewhite;
+}
+ 
+.card{
+    width: 45%;
+    height: 80%;
+    background-color: teal;
+    padding: 20px;
+    border-radius: 15px;
+    margin-left:25% ;
+    margin-right: 25%;
+    margin-top: 10%;
+    color:tomato;
+    font-size: 12.5pt;
+    
+}
+button{
+    display: grid;
+    margin: 5%;
+    color: aqua;
+    background-color: black;
+}
+.input{
+    width: 80%;
+    padding: 1%;
+    border-radius:15px;
+
+    margin: 10px;
+
+}
+p{
+    font-size: large;
+    font-weight:bold;
+    border-color:red;
+}
+a{
+    text-decoration: none;
+    display:block;
+    color: red;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    background-color: aqua;
+    border-radius: 15px;
+}
+.but_go{
+    padding: 1%;
+    width: 10%;
+    border-radius: 15px;
+    border-color: teal;
+}
