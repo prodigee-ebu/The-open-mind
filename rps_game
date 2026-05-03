@@ -1,8 +1,8 @@
 from random import randint
 
 Game_list = ['Rock', 'Paper', 'Scissors']
-count_comp = 0
-count_me = 0
+count_comp = 0  # Computer score
+count_me = 0     # My score
 
 for i in range(5):
     a = randint(1,3)
