@@ -1,0 +1,53 @@
+from random import randint
+
+Game_list = ['Rock', 'Paper', 'Scissors']
+count_comp = 0
+count_me = 0
+
+for i in range(5):
+    a = randint(1,3)
+    b = int(input("Enter Rock (1) Paper (2) Scissors (3): "))
+
+    print(f'You choose {Game_list[b-1]}')
+    print(f'Computer choose {Game_list[a-1]}')
+
+    if a == 1: # Computer chooses rock
+        if b == 1: # I choose rock
+            print("This round is a tie")
+        elif b == 2: # I choose paper
+            count_me +=1
+            print('You won this round')
+        elif b == 3: # I choose scissors
+            count_comp +=1
+            print('Computer won this round')
+
+    if a == 2: # Computer chooses Paper
+        if b == 1: # I choose rock
+            count_comp +=1
+            print('Computer won this round')
+        elif b == 2: # I choose paper
+            print("This round is a tie")
+        elif b == 3: # I choose scissors
+            count_me +=1
+            print('You won this round')
+
+    if a == 3: # Computer chooses Scissors
+        if b == 1: # I choose rock
+            count_me +=1
+            print('You won this round')
+        elif b == 2: # I choose paper
+            count_comp +=1
+            print('Computer won this round')
+        elif b == 3: # I choose scissors
+            print("This round is a tie")
+
+print(f'Final score -> You {count_me} | Computer {count_comp}')
+
+if count_me > count_comp:
+    print('Yow won')
+elif count_comp == count_me:
+    print('It is a tie')
+else:
+    print('Computer won')
+
+
